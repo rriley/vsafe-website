@@ -22,10 +22,77 @@
 <main>
 <h2 id=mal>Publications</h2>
 <ul>
-<li> <a href="http://www.cs.binghamton.edu/~dima/hpca14.pdf">A Non-Inclusive Memory Permissions Architecture for Protection Against Cross-Layer Attacks</a> (HPCA'14) 
+<li> <a>A Non-Inclusive Memory Permissions Architecture for Protection Against Cross-Layer Attacks</a> (HPCA'14) <br\>
+ <a style="font-size:15px" href="#">[View Presentation] </a> &nbsp <a style="font-size:15px" href="http://www.cs.binghamton.edu/~dima/hpca14.pdf">[View Paper] </a>
+
+
+
+<h6 style="font-weight:200">Protecting modern computer systems and complex software
+stacks against the growing range of possible attacks is becoming
+increasingly difficult. The architecture of modern
+commodity systems allows attackers to subvert privileged system
+software often using a single exploit. Once the system
+is compromised, inclusive permissions used by current architectures
+and operating systems easily allow a compromised
+high-privileged software layer to perform arbitrary malicious
+activities, even on behalf of other software layers.
+This paper presents a hardware-supported page permission
+scheme for the physical pages that is based on the concept of
+non-inclusive sets of memory permissions for different layers
+of system software such as hypervisors, operating systems,
+and user-level applications. Instead of viewing privilege levels
+as an ordered hierarchy with each successive level being
+more privileged, we view them as distinct levels each with its
+own set of permissions. Such a permission mechanism, implemented
+as part of a processor architecture, provides a common
+framework for defending against a range of recent attacks. We
+demonstrate that such a protection can be achieved with negligible
+performance overhead, low hardware complexity and
+minimal changes to the commodity OS and hypervisor code</h6> 
+
+<em><h6>Jesse Elwell, Ryan Riley, Nael Abu-Ghazaleh, and Dmitry Ponomarev, "A Non-Inclusive Memory Permissions Architecture for Protection Against Cross-Layer Attacks", Proceedings of the 20th IEEE International Symposium On High Performance Computer Architecture (HPCA 2014), Orlando, Florida, February 2014 (26%).</h6></em>
+
  </li>
- <li> <a href="http://www.cs.binghamton.edu/~dima/micro14.pdf">Iso-X: A Flexible Architecture for Hardware-Managed Isolated Execution</a>(MICRO'14) </li>
+
+ <li> <a>Iso-X: A Flexible Architecture for Hardware-Managed Isolated Execution</a> (MICRO'14) <br>
+  <a style="font-size:15px" href="#">[View Presentation] </a> &nbsp <a style="font-size:15px" href="http://www.cs.binghamton.edu/~dima/micro14.pdf">[View Paper] </a>
+
+<h6 style="font-weight:200">We consider the problem of how to provide an
+execution environment where the application’s secrets are safe
+even in the presence of malicious system software layers. We
+propose Iso-X — a flexible, fine-grained hardware-supported
+framework that provides isolation for security-critical pieces
+of an application such that they can execute securely even in
+the presence of untrusted system software. Isolation in Iso-X is
+achieved by creating and dynamically managing compartments
+to host critical fragments of code and associated data. IsoX
+provides fine-grained isolation at the memory-page level,
+flexible allocation of memory, and a low-complexity, hardwareonly
+trusted computing base. Iso-X requires minimal additional
+hardware, a small number of new ISA instructions to manage
+compartments, and minimal changes to the operating system
+which need not be in the trusted computing base. The run-time
+performance overhead of Iso-X is negligible and even the overhead
+of creating and destroying compartments is modest. IsoX
+offers higher memory flexibility than the recently proposed
+SGX design from Intel, allowing both fluid partitioning of the
+available memory space and dynamic growth of compartments.
+An FPGA implementation of Iso-X runtime mechanisms shows
+a negligible impact on the processor cycle time.
+</h6> 
+
+
+<em><h6>Dmitry Evtyushkin, Jesse Elwell, Meltem Ozsoy, Dmitry Ponomarev, Nael Abu Ghazaleh, and Ryan Riley, "Iso-X: A Flexible Architecture for Hardware-Managed Isolated Execution", Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture (MICRO 2014), Cambridge, UK, December 2014.</h6></em>
+
+
+</li>
+
+
+
 </ul>
+
+
+ 
 
 
 
